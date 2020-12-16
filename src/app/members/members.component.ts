@@ -14,10 +14,14 @@ member: Member  = {
   id: 1,
   name: '永井奏衣'
 };
+selectedMember: Member
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSelect(member: Member): void{
+    this.selectedMember = member;
+  }
 }
